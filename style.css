@@ -1,0 +1,26 @@
+main, div{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  text-align:center;
+}
+
+.gridSection {
+  height: 15px;
+  width: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  margin: 0;
+}
+
+.mainContainer {
+  display: inline-grid;  
+  grid-template-columns: repeat(16, 17px);
+  grid-template-rows: repeat(16, 17px);
+  margin: 10px auto;
+  gap: 0px; /* Adding gap between squares */
+  padding: 0px; /* Optional padding */
+  border: 1px solid rgba(0, 0, 0, 0.493);
+  box-shadow: 1px 1px 2px 0px #00000041;
+}
