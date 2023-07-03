@@ -39,7 +39,7 @@ function removeCells() {
 function createGrid () {
     let gridWidth = container.offsetWidth / gridSize;
     container.style.gridTemplateColumns = `repeat(${gridSize}, ${gridWidth}px) 1fr`;
-    container.style.gridTemplateRows = `repeat(${gridSize}, ${gridWidth}px) 1fr 1fr 1fr`;
+    container.style.gridTemplateRows = `repeat(${gridSize - 1}, ${gridWidth}px)  1fr 1fr 1fr`;
   if (gridSize < 4) {
     container.style.gridTemplateColumns = `repeat(${gridSize},1fr`;
     container.style.gridTemplateRows = `repeat(${gridSize}, 1fr`;
