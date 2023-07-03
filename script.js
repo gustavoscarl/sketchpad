@@ -6,3 +6,13 @@ for (let i = 0; i <= 255; i++ ) {
   container.appendChild(div)
 }
 
+// Add color when hover .gridSection
+
+const gridSection = document.querySelectorAll('.gridSection')
+
+
+gridSection.forEach (function (item, index) {
+  item.addEventListener('mouseover', function addColor () {
+      item.classList.add('active')
+  })
+});
