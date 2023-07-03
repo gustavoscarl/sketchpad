@@ -4,14 +4,16 @@ main, div{
 }
 
 body{
-  text-align:center;
+
+  background-color: rgb(239, 248, 247);
 }
 
 .gridSection {
-  height: 15px;
-  width: 15px;
+  height: 100%;
+  width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.411);
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .active{
@@ -19,12 +21,32 @@ body{
 }
 
 .mainContainer {
-  display: inline-grid;  
-  grid-template-columns: repeat(16, 17px);
-  grid-template-rows: repeat(16, 17px);
+  display: grid;  
+  grid-template-columns: repeat(auto-fill, minmax(15px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(15px, 1fr));
   margin: 10px auto;
   gap: 0px; /* Adding gap between squares */
   padding: 0px; /* Optional padding */
-  border: 1px solid rgba(0, 0, 0, 0.493);
-  box-shadow: 1px 1px 2px 0px #00000041;
+  width: 500px;
+  height: 500px; 
+  justify-content: center;
+}
+
+#newGrid {
+  display: grid;
+  margin: 20px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid rgba(45, 58, 75, 0.692);
+  background-color: rgb(244, 253, 253);
+  justify-content: center;
+}
+
+#newGrid:hover {
+  background-color: rgb(208, 248, 248);
+  border: 1px solid rgba(82, 105, 136, 0.692);
+  color: rgb(7, 19, 128);
+  transition-duration: 0.5s;
 }
