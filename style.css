@@ -34,6 +34,7 @@ body{
 
 #newGrid {
   display: grid;
+  padding: 5px 10px;
   margin: 20px auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -49,4 +50,45 @@ body{
   border: 1px solid rgba(82, 105, 136, 0.692);
   color: rgb(7, 19, 128);
   transition-duration: 0.5s;
+}
+
+
+.btn{
+  display: flex;
+}
+
+.option-btn{
+  padding: 5px 10px;
+  margin: 20px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid rgba(45, 58, 75, 0.692);
+  background-color: rgb(244, 253, 253);
+}
+
+.option-btn:first-child:hover{
+  background-color: rgb(53, 54, 54);
+  border: 1px solid rgba(82, 105, 136, 0.692);
+  color: rgb(230, 231, 241);
+  transition-duration: 0.3s;
+}
+
+.option-btn:last-child:hover{
+  background-color: rgba(123, 250, 85, 0.685);
+  border: 1.5px solid rgba(16, 0, 107, 0.836);
+  color: rgb(253, 101, 63);
+  transition-duration: 0.5s;
+}
+
+#clear {
+  display: flex;
+}
+
+#clear:hover {
+  background-color: rgb(237, 252, 252);
+  border: 1px solid rgba(82, 105, 136, 0.692);
+  color: rgb(124, 129, 172);
+  transition-duration: 0.3s;
 }
